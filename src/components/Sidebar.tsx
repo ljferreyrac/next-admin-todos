@@ -2,8 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { CiLogout } from "react-icons/ci"
 import { SidebarItem } from "./SidebarItem"
-import { IoCalendarOutline, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
-import { FaCookie } from "react-icons/fa6"
+import { IoBasketOutline, IoCalendarOutline, IoCheckboxOutline, IoListOutline } from "react-icons/io5"
+import { PiCookie } from "react-icons/pi"
 
 const items = [
   {
@@ -23,8 +23,13 @@ const items = [
   },
   {
     path: '/dashboard/cookies',
-    icon: <FaCookie/>,
+    icon: <PiCookie/>,
     text: 'Cookies',
+  },
+  {
+    path: '/dashboard/products',
+    icon: <IoBasketOutline/>,
+    text: 'Products',
   },
 ] 
 
